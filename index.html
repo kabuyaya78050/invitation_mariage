@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>David & Sarah — Invitation de mariage</title>
+
+    <meta name="description"
+          content="Invitation au mariage de David et Sarah. Découvrez la cérémonie, la réception et confirmez votre présence.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- INTRODUCTION -->
+    <div class="intro" id="intro">
+        <div class="intro-content">
+            <p>AVEC JOIE ET AMOUR</p>
+
+            <h1>David <span>&</span> Sarah</h1>
+
+            <p>vous invitent à célébrer leur mariage</p>
+
+            <button id="openInvitation">
+                Ouvrir l'invitation
+            </button>
+        </div>
+    </div>
+
+
+    <!-- MUSIQUE -->
+    <audio id="weddingMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="#accueil" class="nav-logo">
+            D <span>&</span> S
+        </a>
+
+        <nav>
+            <a href="#histoire">Notre histoire</a>
+            <a href="#programme">Programme</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#confirmation">RSVP</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="accueil">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    NOTRE GRAND JOUR
+                </p>
+
+                <h1>
+                    David
+                    <span>&</span>
+                    Sarah
+                </h1>
+
+                <p class="hero-date">
+                    12 AVRIL 2026
+                </p>
+
+                <p class="hero-text">
+                    Deux cœurs, une histoire, une nouvelle vie à deux.
+                </p>
+
+                <a href="#confirmation" class="gold-button">
+                    Confirmer ma présence
+                </a>
+
+            </div>
+
+            <div class="scroll">
+                ↓
+            </div>
+
+        </section>
+
+
+        <!-- MESSAGE -->
+        <section class="message section">
+
+            <div class="container">
+
+                <p class="label">
+                    AVEC TOUT NOTRE AMOUR
+                </p>
+
+                <h2>
+                    Nous allons nous dire
+                    <em>Oui</em>
+                </h2>
+
+                <div class="line"></div>
+
+                <p class="message-text">
+                    Après avoir partagé des moments précieux,
+                    des rires, des rêves et de nombreuses aventures,
+                    nous avons décidé d'écrire ensemble le prochain
+                    chapitre de notre histoire.
+                </p>
+
+                <p class="message-text">
+                    Nous serions honorés de vous avoir à nos côtés
+                    pour célébrer ce jour si particulier.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTOIRE -->
+        <section class="story section" id="histoire">
+
+            <div class="container">
+
+                <p class="label">
+                    NOTRE HISTOIRE
+                </p>
+
+                <h2>
+                    Une histoire
+                    <em>qui continue</em>
+                </h2>
+
+                <div class="story-grid">
+
+                    <div class="story-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85"
+                            alt="Couple de mariés">
+                    </div>
+
+                    <div class="story-content">
+
+                        <div class="story-item">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>Notre rencontre</h3>
+
+                                <p>
+                                    Une rencontre inattendue qui allait
+                                    changer nos vies pour toujours.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="story-item">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>Notre histoire</h3>
+
+                                <p>
+                                    Au fil du temps, notre complicité
+                                    est devenue une belle histoire d'amour.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="story-item">
+
+                            <span>03</span>
+
+                            <div>
+                                <h3>Notre engagement</h3>
+
+                                <p>
+                                    Aujourd'hui, nous choisissons de
+                                    continuer cette aventure ensemble.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPTE À REBOURS -->
+        <section class="countdown-section">
+
+            <div class="container">
+
+                <p class="label">
+                    LE COMPTE À REBOURS EST LANCÉ
+                </p>
+
+                <h2>
+                    Plus que quelques jours...
+                </h2>
+
+                <div class="countdown">
+
+                    <div>
+                        <strong id="days">00</strong>
+                        <span>Jours</span>
+                    </div>
+
+                    <div>
+                        <strong id="hours">00</strong>
+                        <span>Heures</span>
+                    </div>
+
+                    <div>
+                        <strong id="minutes">00</strong>
+                        <span>Minutes</span>
+                    </div>
+
+                    <div>
+                        <strong id="seconds">00</strong>
+                        <span>Secondes</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRAMME -->
+        <section class="program section" id="programme">
+
+            <div class="container">
+
+                <p class="label">
+                    PROGRAMME
+                </p>
+
+                <h2>
+                    Le déroulement
+                    <em>de la journée</em>
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="event">
+
+                        <div class="event-time">
+                            14:00
+                        </div>
+
+                        <div class="event-info">
+
+                            <h3>Cérémonie religieuse</h3>
+
+                            <p>
+                                Église Saint-Michel
+                            </p>
+
+                            <span>
+                                Kinshasa, RDC
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <div class="event-time">
+                            17:00
+                        </div>
+
+                        <div class="event-info">
+
+                            <h3>Séance photos</h3>
+
+                            <p>
+                                Jardin des mariés
+                            </p>
+
+                            <span>
+                                Photos avec famille et amis
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <div class="event-time">
+                            18:00
+                        </div>
+
+                        <div class="event-info">
+
+                            <h3>Réception</h3>
+
+                            <p>
+                                La Perle Events
+                            </p>
+
+                            <span>
+                                Dîner, musique et célébration
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOCALISATION -->
+        <section class="location section">
+
+            <div class="container location-grid">
+
+                <div>
+
+                    <p class="label">
+                        RENDEZ-VOUS
+                    </p>
+
+                    <h2>
+                        Nous vous
+                        <em>attendons</em>
+                    </h2>
+
+                    <p class="location-text">
+                        Nous serons heureux de partager cette journée
+                        exceptionnelle avec vous.
+                    </p>
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Kinshasa"
+                        target="_blank"
+                        class="dark-button">
+
+                        Voir l'emplacement
+
+                    </a>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <div class="location-icon">
+                        ♡
+                    </div>
+
+                    <h3>
+                        La Perle Events
+                    </h3>
+
+                    <p>
+                        Kinshasa, République démocratique du Congo
+                    </p>
+
+                    <p>
+                        Samedi 12 avril 2026
+                    </p>
+
+                    <p>
+                        À partir de 18h00
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIE -->
+        <section class="gallery section" id="galerie">
+
+            <div class="container">
+
+                <p class="label">
+                    NOS SOUVENIRS
+                </p>
+
+                <h2>
+                    Quelques moments
+                    <em>de bonheur</em>
+                </h2>
+
+                <div class="gallery-grid">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=85"
+                        alt="Mariage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=85"
+                        alt="Mariage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=800&q=85"
+                        alt="Mariage">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=85"
+                        alt="Réception">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RSVP -->
+        <section class="rsvp section" id="confirmation">
+
+            <div class="container rsvp-box">
+
+                <p class="label">
+                    RSVP
+                </p>
+
+                <h2>
+                    Serez-vous
+                    <em>des nôtres ?</em>
+                </h2>
+
+                <p>
+                    Merci de confirmer votre présence avant le
+                    1er avril 2026.
+                </p>
+
+                <a
+                    href="https://wa.me/243XXXXXXXXX?text=Bonjour%20David%20et%20Sarah%2C%20je%20confirme%20ma%20présence%20à%20votre%20mariage."
+                    target="_blank"
+                    class="whatsapp-button">
+
+                    💬 Confirmer sur WhatsApp
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- MESSAGE FINAL -->
+        <section class="final-message">
+
+            <div class="container">
+
+                <p>
+                    "L'amour ne consiste pas à se regarder l'un l'autre,
+                    mais à regarder ensemble dans la même direction."
+                </p>
+
+                <h2>
+                    David & Sarah
+                </h2>
+
+                <span>
+                    12.04.2026
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Invitation créée avec ❤️ par
+            <strong>Kabuyaya Tech</strong>
+        </p>
+
+        <p>
+            Création graphique • Invitations numériques • Sites web
+        </p>
+
+    </footer>
+
+
+    <!-- WHATSAPP -->
+    <a
+        href="https://wa.me/243XXXXXXXXX?text=Bonjour%20Kabuyaya%20Tech%2C%20je%20suis%20intéressé%20par%20une%20invitation%20de%20mariage."
+        target="_blank"
+        class="floating-whatsapp"
+        aria-label="WhatsApp">
+
+        WhatsApp
+
+    </a>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
